@@ -9,43 +9,34 @@
 
     <hr class="sidebar-divider my-0">
 
-    <li class="nav-item {{ $menu_type == 'dashboard' ? 'active' : '' }}">
-        @if (auth()->user()->role == 'admin')
-            <a href="{{ route('admin.dashboard') }}" class="nav-link">
-                <i class="fa-regular fa-fw fa-house"></i>
-                <span>Dashboard</span>
-            </a>
-        @else
-            <a href="{{ route('user.dashboard') }}" class="nav-link">
-                <i class="fa-regular fa-fw fa-house"></i>
-                <span>Dashboard</span>
-            </a>
-        @endif
+    <li class="nav-item">
+        <a href="{{ route('admin.dashboard') }}" class="nav-link">
+            <i class="fa-regular fa-fw fa-house"></i>
+            <span>Dashboard</span>
+        </a>
     </li>
 
-    @if (auth()->user()->role == 'admin')
-    <hr class="sidebar-divider">
+        <hr class="sidebar-divider">
         <div class="sidebar-heading">Kelola</div>
 
-        <li class="nav-item {{ $menu_type == 'manage-class' ? 'active' : '' }}">
-            <a href="{{ route('admin.manage.class') }}" class="nav-link">
+        <li class="nav-item">
+            <a href="{{ route('admin.kategori') }}" class="nav-link">
                 <i class="fa-regular fa-fw fa-school"></i>
-                <span>Kelola Kelas</span>
+                <span>Kelola Kategori</span>
             </a>
         </li>
-        <li class="nav-item {{ $menu_type == 'manage-user' ? 'active' : '' }}">
-            <a href="{{ route('admin.manage.users') }}" class="nav-link">
+        <li class="nav-item">
+            <a href="" class="nav-link">
                 <i class="fa-regular fa-fw fa-users"></i>
-                <span>Kelola User</span>
+                <span>Kelola Produk</span>
             </a>
         </li>
-        <li class="nav-item {{ $menu_type == 'manage-pemilu' ? 'active' : '' }}">
-            <a href="{{ route('admin.manage.pemilu') }}" class="nav-link">
+        <li class="nav-item">
+            <a href="" class="nav-link">
                 <i class="fa-regular fa-fw fa-check-to-slot"></i>
-                <span>Kelola Pemilu</span>
+                <span>Kelola Kasir</span>
             </a>
         </li>
-    @endif
 
     <hr class="sidebar-divider d-none d-md-block">
 

@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('produks', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->foreignUuid('kategori_id')->constrained('kategoris')->cascadeOnDelete();
+            $table->string('kode')->unique();
             $table->string('nama');
             $table->string('deskripsi')->nullable();
             $table->string('gambar')->nullable();
