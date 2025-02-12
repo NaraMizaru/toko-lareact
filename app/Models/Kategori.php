@@ -9,4 +9,9 @@ class Kategori extends Model
 {
     use HasUuids;
     
+    protected $fillable = [
+        'nama',
+        'deskripsi',
+        'icon'
+    ];
 }

@@ -26,6 +26,9 @@ Route::middleware('auth')->group(function () {
 
         Route::controller(AdminKategoriController::class)->group(function () {
             Route::get('/kategori', 'index')->name('admin.kategori');
+            Route::post('/kategori/store/{id?}', 'store')->name('admin.kategori.store');
+            Route::get('/kategori/data/{id}', 'dataById')->name('admin.kategori.data.id');
+            Route::get('/kategori/delete/{id}', 'delete')->name('admin.kategori.delete');
         });
     });
 });
