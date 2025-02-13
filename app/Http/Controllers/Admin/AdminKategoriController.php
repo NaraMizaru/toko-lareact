@@ -45,7 +45,9 @@ class AdminKategoriController extends Controller
     public function dataById($id)
     {
         $kategori = Kategori::find($id);
-        // dd($kategori);
+        if (!$kategori) {
+            return response()->json(['error' => 'Kategori tidak ditemukan'], 404);
+        }
 
         return response()->json($kategori);
     }

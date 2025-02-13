@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('kasirs', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->foreignUuid('user_id')->constrained('users')->cascadeOnDelete();
-            $table->foreignUuid('perusahaan_id')->constrained('perusahaans')->cascadeOnDelete();
+            $table->foreignUuid('perusahaan_id')->nullable()->constrained('perusahaans')->cascadeOnDelete();
             $table->timestamps();
         });
     }

@@ -26,7 +26,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="{{ route('admin.produk') }}" class="nav-link">
                 <i class="fa-regular fa-fw fa-users"></i>
                 <span>Kelola Produk</span>
             </a>

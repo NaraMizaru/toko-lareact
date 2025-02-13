@@ -1,57 +1,57 @@
 const Sidebar = () => {
     return (
         <ul
-            class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+            className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
             id="accordionSidebar"
         >
             <a
-                class="sidebar-brand d-flex align-items-center justify-content-center"
+                className="sidebar-brand d-flex align-items-center justify-content-center"
                 href=""
             >
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fa-regular fa-fw fa-envelope"></i>
+                <div className="sidebar-brand-icon rotate-n-15">
+                    <i className="fa-regular fa-fw fa-envelope"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">
+                <div className="sidebar-brand-text mx-3">
                     E-Voting <sup>2.0</sup>
                 </div>
             </a>
 
-            <hr class="sidebar-divider my-0" />
+            <hr className="sidebar-divider my-0" />
 
-            <li class="nav-item">
-                <a href="" class="nav-link">
-                    <i class="fa-regular fa-fw fa-house"></i>
+            <li className="nav-item">
+                <a href="" className="nav-link">
+                    <i className="fa-regular fa-fw fa-house"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
 
-            <hr class="sidebar-divider" />
+            <hr className="sidebar-divider" />
 
-            <div class="sidebar-heading">Kelola</div>
-            <li class="nav-item">
-                <a href="" class="nav-link">
-                    <i class="fa-regular fa-fw fa-school"></i>
+            <div className="sidebar-heading">Kelola</div>
+            <li className="nav-item">
+                <a href="" className="nav-link">
+                    <i className="fa-regular fa-fw fa-school"></i>
                     <span>Kelola Kategori</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="" class="nav-link">
-                    <i class="fa-regular fa-fw fa-school"></i>
+            <li className="nav-item">
+                <a href="" className="nav-link">
+                    <i className="fa-regular fa-fw fa-school"></i>
                     <span>Kelola Perusahaan</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="" class="nav-link">
-                    <i class="fa-regular fa-fw fa-school"></i>
+            <li className="nav-item">
+                <a href="" className="nav-link">
+                    <i className="fa-regular fa-fw fa-school"></i>
                     <span>Kelola Kasir</span>
                 </a>
             </li>
 
-            <hr class="sidebar-divider d-none d-md-block" />
+            <hr className="sidebar-divider d-none d-md-block" />
 
-            <div class="text-center d-none d-md-inline">
+            <div className="text-center d-none d-md-inline">
                 <button
-                    class="rounded-circle border-0"
+                    className="rounded-circle border-0"
                     id="sidebarToggle"
                 ></button>
             </div>
